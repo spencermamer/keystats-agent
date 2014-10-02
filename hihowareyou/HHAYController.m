@@ -9,15 +9,17 @@
 #import "HHAYController.h"
 #import <AppKit/NSAccessibility.h>
 
+
+
 @implementation HHAYController
 
-@synthesize then;
+//@synthesize then;
 
 - (void)alertDidEnd:(NSAlert *)alert
     returnCode:(NSInteger)returnCode
     contextInfo:(void *)contextInfo {
     if (returnCode == NSAlertFirstButtonReturn) {
-        logPath = [@"~/log/keystrokes.log"
+        logPath = [@"~/log/keystrokes_test.log"
                    stringByExpandingTildeInPath];
         [[NSFileManager defaultManager]
             createFileAtPath:logPath
@@ -59,11 +61,13 @@
         [menu addItem:quitMI];
     }
     
-    // Declare my block variables
-    __block long tickStrokes = 0;
-    __block long lastTick = 0;
-    
-    logPath = [@"~/log/keystrokes.log"
+	// Declare my block variables
+	//	    __block long tickStrokes = 0;
+	// __block long lastTick = 0;
+	self->tickStrokes = 0;
+	self->lastTick = 0;
+	
+    logPath = [@"~/log/keystrokes_test.log"
         stringByExpandingTildeInPath];
     
     NSString *logDirPath = [@"~/log/"
@@ -82,7 +86,7 @@
         [alert setAlertStyle:NSWarningAlertStyle];
         NSInteger result = [alert runModal];
         if (result == 1000) {
-            // create directory
+            // create directory if need be
             NSFileManager *filemgr;
             
             filemgr = [NSFileManager defaultManager];
@@ -113,20 +117,16 @@
      addGlobalMonitorForEventsMatchingMask:NSKeyDownMask
      handler:^ (NSEvent *event) {
         int nextTick = floor([[NSDate date] timeIntervalSince1970] / 60) * 60;
-        if (nextTick - lastTick > 60) {
-            lastTick = nextTick;
+        if (nextTick - self->lastTick > 60) {
+            self->lastTick = nextTick;
 
             [pOutput seekToEndOfFile];
 
-            [pOutput writeData:[[NSString
-                stringWithFormat:@"%d, %d\n",
-                lastTick,
-                tickStrokes]
-                dataUsingEncoding:NSUTF8StringEncoding]];
+            [pOutput writeData:[[NSString stringWithFormat:@"%ld, %ld\n", self->lastTick, self->tickStrokes] dataUsingEncoding:NSUTF8StringEncoding]];
 
-            tickStrokes = 0;
+            self->tickStrokes = 0;
         }
-        tickStrokes++;
+        self->tickStrokes++;
      }];
     
     return self;

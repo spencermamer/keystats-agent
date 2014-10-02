@@ -26,7 +26,7 @@
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in hihowareyouTests");
+    XCTFail(@"Unit tests are not implemented yet in hihowareyouTests");
 }
 
 @end

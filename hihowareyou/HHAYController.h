@@ -28,5 +28,5 @@
     
     NSFileHandle *output;
 }
-@property (retain) NSDate* then;
+//@property (retain) NSDate* then;
 @end
