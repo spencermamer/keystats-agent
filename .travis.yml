@@ -1,7 +1,6 @@
 language: objective-c
-xcode_project:hihowareyou.xcodeproj 
+xcode_project:hihowareyou.xcodeproj
 xcode_scheme: hihowareyouTests
 xcode_sdk: macosx10.9
-
 notifications:
   email: false
