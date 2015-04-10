@@ -1,0 +1,4 @@
+language: objective-c
+xcode_project: HHAYKC.xcodeproj
+xcode_scheme: hihowareyouTests
+xcode_sdk: iphonesimulator8.3
