@@ -13,7 +13,7 @@
 
 - (void)dealloc
 {
-  [super dealloc]
+  [super dealloc];
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
