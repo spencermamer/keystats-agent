@@ -47,7 +47,7 @@
 		911F01C3148C7F8F00ACF7F9 /* HHAYAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHAYAppDelegate.h; sourceTree = "<group>"; };
 		911F01C4148C7F8F00ACF7F9 /* HHAYAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHAYAppDelegate.m; sourceTree = "<group>"; };
 		911F01C7148C7F8F00ACF7F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		911F01CE148C7F9000ACF7F9 /* hihowareyouTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hihowareyouTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		911F01CE148C7F9000ACF7F9 /* hihowareyouTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hihowareyouTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		911F01D6148C7F9000ACF7F9 /* hihowareyouTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "hihowareyouTests-Info.plist"; sourceTree = "<group>"; };
 		911F01D8148C7F9000ACF7F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		911F01DA148C7F9000ACF7F9 /* hihowareyouTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hihowareyouTests.h; sourceTree = "<group>"; };
@@ -99,7 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				911F01AD148C7F8F00ACF7F9 /* hihowareyou.app */,
-				911F01CE148C7F9000ACF7F9 /* hihowareyouTests.octest */,
+				911F01CE148C7F9000ACF7F9 /* hihowareyouTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -213,7 +213,7 @@
 			);
 			name = hihowareyouTests;
 			productName = hihowareyouTests;
-			productReference = 911F01CE148C7F9000ACF7F9 /* hihowareyouTests.octest */;
+			productReference = 911F01CE148C7F9000ACF7F9 /* hihowareyouTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */

@@ -29,7 +29,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "911F01CD148C7F9000ACF7F9"
-               BuildableName = "hihowareyouTests.octest"
+               BuildableName = "hihowareyouTests.xctest"
                BlueprintName = "hihowareyouTests"
                ReferencedContainer = "container:hihowareyou.xcodeproj">
             </BuildableReference>
@@ -47,7 +47,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "911F01CD148C7F9000ACF7F9"
-               BuildableName = "hihowareyouTests.octest"
+               BuildableName = "hihowareyouTests.xctest"
                BlueprintName = "hihowareyouTests"
                ReferencedContainer = "container:hihowareyou.xcodeproj">
             </BuildableReference>
