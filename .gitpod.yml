@@ -1,0 +1,5 @@
+image: swift
+vscode:
+  extensions:
+    - vknabel.vscode-swift-development-environment@2.8.0:MbqhVORmlYmfSNfLN8q8hw==
+    - Orta.vscode-ios-common-files@1.0.5:iwrB5qXVoD/q4e1T1FuYLA==
